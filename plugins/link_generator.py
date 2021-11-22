@@ -57,4 +57,4 @@ async def link_generator(client: Client, message: Message):
     base64_string = await encode(f"get-{msg_id * abs(client.db_channel.id)}")
     link = f"https://t.me/{client.username}?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 𝑩𝒂𝒈𝒊𝒌𝒂𝒏 𝑳𝒊𝒏𝒌", url=f'https://telegram.me/share/url?url={link}')]])
-    await channel_message.reply_text(f"<b>Here is your link</b>\n\n{link}", quote=True, reply_markup=reply_markup)
+    await channel_message.reply_text(f"<b>👇𝙇𝙞𝙣𝙠𝙣𝙮𝙖 𝘿𝙞𝙗𝙖𝙬𝙖𝙝 𝙞𝙣𝙞 𝙎𝙖𝙮𝙖𝙣𝙜👇</b>\n{link}", quote=True, reply_markup=reply_markup)
